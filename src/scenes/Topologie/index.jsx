@@ -21,7 +21,7 @@ const Topologie = () => {
   useEffect(() => {
     const fetchTopologie = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/api/topologie');
+        const response = await axios.get('https://noderole-1.onrender.com/api/topologie');
         const visData = transformDataToVisNetwork(response.data);
         setGraph(visData);
       } catch (error) {

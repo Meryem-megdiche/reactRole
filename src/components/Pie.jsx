@@ -15,7 +15,7 @@ const TTLStatsPieChart = ({ equipmentIds, startDate, endDate }) => {
 
       console.log('Envoi de la requête API avec:', { equipmentIds, startDate, endDate });
       try {
-        const response = await axios.post('http://localhost:3001/api/ttlStats', {
+        const response = await axios.post('https://noderole-1.onrender.com/api/ttlStats', {
           equipmentIds,
           startDate,
           endDate

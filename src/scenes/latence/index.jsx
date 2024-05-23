@@ -16,7 +16,7 @@ const LatencyAnalysis = () => {
 
   const handleLatencyAnalysis = async () => {
     try {
-      const response = await axios.post('http://localhost:3001/api/latencyAnalysis', {
+      const response = await axios.post('https://noderole-1.onrender.com/api/latencyAnalysis', {
         startDate,
         endDate,
         equipmentIds: equipmentIds.split(',').map(id => id.trim()),
